@@ -1417,7 +1417,7 @@ public class RangeBar extends View {
             mActiveCircleBoundaryColor = mCircleBoundaryColor;
             mTickDefaultColor = ta.getColor(R.styleable.RangeBar_mrb_tickDefaultColor , DEFAULT_TICK_COLOR);
             mActiveTickDefaultColor = mTickDefaultColor;
-            mTickColors = getColors(ta.getTextArray(R.styleable.RangeBar_mrb_tickColors), mTickDefaultColor);
+            mTickColors = getColors(R.styleable.RangeBar_mrb_tickColors, mTickDefaultColor);
             mActiveTickColors = new ArrayList<>(mTickColors);
 
             mTickLabelColor = ta.getColor(R.styleable.RangeBar_mrb_tickLabelColor, DEFAULT_TICK_LABEL_COLOR);
